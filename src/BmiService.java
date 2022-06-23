@@ -1,10 +1,8 @@
 public class BmiService {
 
-    public int calculate(double cost) {
-        double growth = 1.58;
-
-        double imt = cost / (growth * growth);
-        return (int) imt;
+    public double calculate(double growth, double weight) {
+        double imt = weight / (growth * growth);
+        return imt;
 
     }
 
